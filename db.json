@@ -1,21 +1,5 @@
 {
-  "projects": [
-    {
-      "id": "bd71",
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "6cfa",
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "62b8",
-      "cost": 0,
-      "services": []
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": "1",
