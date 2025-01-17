@@ -26,7 +26,7 @@ function Project() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch(`http://localhost:5000/projects/${id}`, {
+            fetch(`https://projeto-costs-phi.vercel.app/projects/${id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ function Project() {
             setType('error')
             return false
         }
-        fetch(`http://localhost:5000/projects/${project.id}`,{
+        fetch(`https://projeto-costs-phi.vercel.app/projects/${project.id}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -83,7 +83,7 @@ function Project() {
 
         project.cost = newCost
 
-        fetch(`http://localhost:5000/projects/${project.id}`, {
+        fetch(`https://projeto-costs-phi.vercel.app/projects/${project.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -105,7 +105,7 @@ function Project() {
         projectUpdated.services = serviceUpdated
         projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
 
-        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+        fetch(`https://projeto-costs-phi.vercel.app/projects/${projectUpdated.id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
